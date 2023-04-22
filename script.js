@@ -20,7 +20,7 @@ function randomtip(choice) {
     }
 
     if (choice == 1 && random == 0) {
-        document.getElementById('randomtip').innerHTML = '<div>#</div>';
+        document.getElementById('randomtip').innerHTML = "<div>צ'יקנים זה טעים ומתוק (רק עם צילי)  (itaychik5)</div>";
     }
 
     if (choice == 1 && random == 2) {
