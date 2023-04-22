@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="icon" type="image/png" href="NP.png">
+    <title>NetroPolis - שחקנים</title>
+
+
+
+
+
+</head>
+
+<body dir="rtl">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://www.youtube.com/channel/UCSSs_ylPw2l7yIPeA7nGuIA">
+                        <img src="./LogoP2.png" alt="Logo" width="170" height="45"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">דף הבית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="players.html">שחקנים</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            סרטונים
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="thecoolvideos.html">TheCool</a></li>
+                            <li><a class="dropdown-item" href="dvirossvideos.html">Dviross</a></li>
+                            <li><a class="dropdown-item" href="itaychikvideos.html">itaychik5</a></li>
+                            <li><a class="dropdown-item" href="nordanvideos.html">Nordan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tipsandupdates.html">טיפים ועדכונים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="askus.html">תשאלו אותנו / תגובות</a>
+                    </li>
+            </div>
+            <div class="mode" style="color: white;">
+                <span class="change">בהיר</span>
+            </div>
+    </nav>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div>
+
+    </div>
+
+
+
+
+    <script>
+        $(".change").on("click", function () {
+            if ($("body").hasClass("dark")) {
+                $("body").removeClass("dark");
+                $(".change").text("בהיר");
+            } else {
+                $("body").addClass("dark");
+                $(".change").text("כהה");
+            }
+        });
+
+
+
+
+
+
+        let players = [
+            {
+                title: "TheCool",
+                desc: "אני איתי, או בכינוי שלי TheCool אני אוהב ליצור תוכן ליוטיוב ובעיקר תוכן של נטרופוליס, אני אוהב ליצור אתרים (כמו האתר הזה) ואני מאוד משקיע בסרטונים שלי אז בבקשה תירשמו לערוץ שלי",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071837196987924550/TheCool20211.png",
+                channelUrl: "https://www.youtube.com/channel/UCFf2wgUDC8DZQgGeE4PHsPA",
+                vidsUrl: "thecoolvideos.html"
+            },
+            {
+                title: "Dviross",
+                desc: "היי. אני דביר, אני אוהב להרוג אנשים 👵 ואני אוהב לבנות. (לא בנות) ואני אוהב לערוך. תירשמו לערוץ שלי כי אם לא נורדן יבוא לבית שלכם.",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071837461245874257/image.png",
+                channelUrl: "https://www.youtube.com/@dvirossytd3304",
+                vidsUrl: "dvirossvideos.html"
+            },
+            {
+                title: "itaychik5",
+                desc: "שלום שמי איתי או בכינוי איתיציק אני מנהל את הערוץ שלי כבר 5 שנים אני שחקן מיינקראפט כבר 7 שנים ותעשו לי סאב",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071840307223728138/image.png",
+                channelUrl: "https://www.youtube.com/channel/UCMRVAgZrtca2X74vJQSvR_g",
+                vidsUrl: "itaychikvideos.html"
+            },
+            {
+                title: "Cherrotto",
+                desc: "שלום קוראים לי רותם או כמו בכינוי הגיימר שלי Cherroto אני לא מנהל ערוץ אבל אני שחקן וָתִיק של מיינקראפט",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071840743586533496/image.png",
+                channelUrl: "channelerror.html",
+                vidsUrl: "vidserror.html"
+            },
+            {
+                title: "Nordan",
+                desc: "שלום אני נורדן ואני אחד מהמשתתפים של נטרופוליס. אני בונה סוג של כפר קטן אך אני גם חלק מהמזרח, כולנו חברים. אז אני יכול לסכם את זה בשלוש מילים תעשו לי סאב!",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071841293254266951/image.png",
+                channelUrl: "https://www.youtube.com/channel/UCU-kUjJu0b6zdH33tROIfJw",
+                vidsUrl: "nordanvideos.html",
+            },
+            {
+                title: "ilaycraft",
+                desc: "שלום שמי עילאי או ilaycraft אני שחקן מיינקראפט ויש לי ערוץ אז תעשו סאב",
+                imageUrl: "https://cdn.discordapp.com/attachments/962995975822143498/1071841637812150302/image.png",
+                channelUrl: "https://www.youtube.com/@rafikanyas1",
+                vidsUrl: "vidserror.html",
+            }
+        ]
+
+        function showPlayers() {
+            for (let index = 0; index < players.length; index++) {
+
+                document.getElementById('players').innerHTML += `
+        <div class="col">
+              <div class="card shadow-sm">
+              <img class="card-img" src="${players[index].imageUrl}" alt="">
+                <div class="card-body">
+                  <h6 class="card-text">שם: </h6> ${players[index].title}
+                  <br>
+                  <h6 class="card-text">תיאור:</h6>
+                  <button type="button" class="btn btn-link card-text descPlayers" onclick="Swal.fire('${players[index].desc}')">...</button>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <a class="btn btn-sm btn-secondary" href="${players[index].channelUrl}" target="_blank">פתח ערוץ</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="${players[index].vidsUrl}">פתח עמוד סרטונים</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `;
+            }
+        }
+
+        window.onload = function () {
+            showPlayers()
+        };
+
+
+
+    </script>
+
+
+
+    <div id="players" onclick=""></div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <nav class="navbar bg-body-tertiary sticky-bottom">
+        <div class="container-fluid">
+            <img src="LogoP2.png" height="50px">
+            <a href="https://www.youtube.com/@TheCool2022" target="_blank">
+                <img src="thecoolchannelimg.jpg" alt="TheCool" width="80" style="border-radius: 100px;"
+                    title="תירשמו לערוץ!!!!!!!!!!!!!!">
+            </a>
+            <a href="https://www.youtube.com/channel/UCWxIbWMtGxyJeQR-iVglMTQ" target="_blank">
+                <img src="dvirosschannelimg.jpg" alt="Dviross" width="80" style="border-radius: 100px;"
+                    title="תירשמו לערוץ!!!!!!!!!!!!!!">
+            </a>
+            <a href="https://www.youtube.com/channel/UCMRVAgZrtca2X74vJQSvR_g" target="_blank">
+                <img src="itaychik5channelimg.jpg" alt="itaychik5" width="80" style="border-radius: 100px;"
+                    title="תירשמו לערוץ!!!!!!!!!!!!!!">
+            </a>
+            <a href="https://www.youtube.com/channel/UCU-kUjJu0b6zdH33tROIfJw" target="_blank">
+                <img src="nordanchannelimg.jpg" alt="Nordan" width="80" style="border-radius: 100px;"
+                    title="תירשמו לערוץ!!!!!!!!!!!!!!">
+            </a>
+        </div>
+    </nav>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,69 @@
+.mode {
+    float: right;
+}
+
+.change {
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+
+.dark {
+    background-color: #222;
+    color: #e6e6e6;
+}
+
+.card-img {
+    width: 288px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.col {
+    width: 300px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+
+.copyrightnavbar {
+    position: relative;
+    bottom: 100%;
+}
+
+
+.ddActive {
+    color: wheat;
+}
+
+.ddActive:hover {
+    color: whitesmoke;
+}
+
+.form-control {
+    width: 250px;
+    text-align: right;
+    resize: none;
+}
+
+#free-text {
+    width: 600px;
+    height: 250px;
+}
+
+
+.emailborder {
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+}
+
+.btn-success {
+    width: 167px;
+}
