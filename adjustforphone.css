@@ -1,0 +1,40 @@
+.askusUnavailablephone {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+.homeimg {
+    display: none;
+}
+
+.mode {
+    display: none;
+}
+
+.navbar-toggler {
+    position: relative;
+    left: 300px;
+}
+
+
+.logo {
+    position: relative;
+    right: 170px;
+}
+
+.underlogo {
+    display: none;
+}
+
+.askusStuff {
+    display: none;
+}
+
+.askusUnavailablephone {
+    display: block;
+}
+
+#navbar-example2 {
+    display: none;
+}
+}
